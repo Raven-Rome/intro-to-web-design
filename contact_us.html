@@ -4,73 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    <header>
+        <div id="banner">
+            <p>Notification</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
 
-    <h1 style="color:cyan;">Contact Us</h1>
-    <hr/>
+    <main>
+        <h1>Contact Us</h1>
+        <hr/>
+        <article>
+        <!--HTML Tables-->
+        <h2>Locations</h2>
+            <table>
+                <tr>
+                    <th>Logo</th>
+                    <th>Location</th>
+                    <th>Opening Hours</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
 
-    <h2>Locations</h2>
-    <table>
-        <tr>
-            <th>Logo</th>
-            <th>Location</th>
-            <th>Opening Hours</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-        </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src="images/Random.jpg" alt="logo1" />
+                    </td>
+                    <td>Mandeville</td>
+                    <td>9 AM to 5PM</td>
+                    <td>mandevillebranch@preservation.com</td>
+                    <td>18234599863</td>
+                </tr>
 
-        <tr>
-            <td>
-                <img src="" alt="logo1" />
-            </td>
-            <td>Mandeville</td>
-            <td>9 AM to 5PM</td>
-            <td>mandevillebranch@preservation.com</td>
-            <td>18234599863</td>
-        </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src="images/Random.jpg" alt="logo1" />
+                    </td>
+                    <td>Kingston</td>
+                    <td>9 AM to 5PM</td>
+                    <td>kingstonbranch@preservation.com</td>
+                    <td>18234399863</td>
+                </tr>
 
-        <tr>
-            <td>
-                <img src="" alt="logo2" />
-            </td>
-            <td>Kingston</td>
-            <td>9 AM to 5PM</td>
-            <td>kingstonbranch@preservation.com</td>
-            <td>18234399863</td>
-        </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src="images/Random.jpg" alt="logo1" />
+                    </td>
+                    <td>Montego Bay</td>
+                    <td>9 AM to 5PM</td>
+                    <td>mobaybranch@preservation.com</td>
+                    <td>18234509863</td>
+                </tr>
+            </table>
+        </article>
 
-        <tr>
-            <td>
-                <img src="" alt="logo3" />
-            </td>
-            <td>Montego Bay</td>
-            <td>9 AM to 5PM</td>
-            <td>mobaybranch@preservation.com</td>
-            <td>18234509863</td>
-        </tr>
-    </table>
+        <article>
+            <h2>General Inquiries</h2>
+            <!--For confirmation-->
+            <form action="confirmation.html">
+                <label for="fullname">Name: *</label><br/>
+                <input type="text" id="fullname" name="fullname" />
+                <br/><br/>
+                <label for="email">Email Address: *</label><br/>
+                <input type="email" id="email" name="emailaddress" />
+                <br/><br/>
+                <label>Are you employed?</label><br/>
+                <input type="radio" value="Y" name="employed"/> Yes
+                <input type="radio" value="N"  name="employed"/> No
+                <br/><br/>
+                <label for="inquiry">State your inquiry *</label><br/>
+                <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
+                <br/>
+                <input type="submit">
+            </form>
+        </article>
+    </main>
 
-    <h2>General Inquiries</h2>
-    <form action="confirmation.html">
-        <label for="fullname">Name: *</label><br/>
-        <input type="text" id="fullname" name="fullname" />
-        <br/><br/>
-        <label for="email">Email Address: *</label><br/>
-        <input type="email" id="email" name="emailaddress" />
-        <br/><br/>
-        <label>Are you employed?</label><br/>
-        <input type="radio" value="Y" name="employed"/> Yes
-        <input type="radio" value="N"  name="employed"/> No
-        <br/><br/>
-        <label for="inquiry">State your inquiry *</label><br/>
-        <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
-        <br/>
-        <input type="submit">
-    </form>
-
+    <footer>
+        <br/> <br/>
+        <a href="https://www.amazon.com">Amazon</a>
+        <a href="https://www.ebay.com" target="_blank">eBay</a>
+    </footer>
 </body>
 </html>
