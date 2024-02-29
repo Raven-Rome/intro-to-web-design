@@ -68,21 +68,22 @@
         <article>
             <h2>General Inquiries</h2>
             <!--For confirmation-->
-            <form action="confirmation.html">
+            <form action="confirmation.html" id="contactForm">
                 <label for="fullname">Name: *</label><br/>
-                <input type="text" id="fullname" name="fullname" />
+                <input required type="text" id="fullname" name="fullname" />
                 <br/><br/>
                 <label for="email">Email Address: *</label><br/>
-                <input type="email" id="email" name="emailaddress" />
+                <input required type="email" id="email" name="emailaddress" />
                 <br/><br/>
                 <label>Are you employed?</label><br/>
                 <input type="radio" value="Y" name="employed"/> Yes
                 <input type="radio" value="N"  name="employed"/> No
                 <br/><br/>
                 <label for="inquiry">State your inquiry *</label><br/>
-                <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
+                <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
                 <br/>
                 <input type="submit">
+                <button type="button" onclick="clearForm()" >Clear</button>
             </form>
         </article>
     </main>
@@ -92,5 +93,8 @@
         <a href="https://www.amazon.com">Amazon</a>
         <a href="https://www.ebay.com" target="_blank">eBay</a>
     </footer>
+
+    <script src="scripts/site.js"></script>        
+    
 </body>
 </html>
