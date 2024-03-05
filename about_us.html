@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 <body>
     <header>
-        <div id="banner">
-            <p>Notification</p>
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>Random Website Notification</p>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
+
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Animal Protection</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="about_us.html">About Us</a>
+                  <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1>About Us</h1>
         <hr/>
 
@@ -30,25 +42,124 @@
     
         <article>
             <h2>Daily Task</h2>
-            <ul>
-                <li>We patrol preservations</li>
-                <li>We police</li>
-                <li>We protect</li>
-                <li>We rescue</li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">We patrol</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta.</p>
+                          <a href="contact_us.html" class="btn btn-primary">Check Out Patrols</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">We police</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta.</p>
+                          <a href="contact_us.html" class="btn btn-primary">Go Police</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">We protect</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta.</p>
+                          <a href="contact_us.html" class="btn btn-primary">Go Protect</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">We rescue</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta.</p>
+                          <a href="contact_us.html" class="btn btn-primary">Go Rescue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     
         <article>
             <h2>How You Can Join?</h2>
-            <ol>
-                <li>Call our recruitment center</li>
-                <li>Send your resume</li>
-                <li>Attend Interview</li>
-                <li>Complete Training</li>
-                <li>
-                    <a href="contact_us.html">Contact Center Office</a>
-                </li>
-            </ol>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Call our recruitment center
+                    </button>
+                  </h3>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta. Proin pharetra porta ex a egestas.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Send your resume
+                    </button>
+                  </h3>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta. Proin pharetra porta ex a egestas.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Attend Interview
+                    </button>
+                  </h3>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta. Proin pharetra porta ex a egestas.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Complete Training
+                      </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta. Proin pharetra porta ex a egestas.
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Contact Center Office
+                      </button>
+                    </h3>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, sapien id semper ullamcorper, libero est tristique eros, at aliquet lorem odio blandit ex. Vivamus eleifend accumsan leo nec iaculis. Nullam pulvinar turpis nec purus sodales porta. Proin pharetra porta ex a egestas.
+
+                        <a href="contact_us.html" class="btn btn-outline-secondary">Contact Us</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </main>
 
@@ -58,7 +169,9 @@
         <a href="https://www.ebay.com" target="_blank">eBay</a>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>  
 
 </body>
 </html>
